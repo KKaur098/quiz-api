@@ -1,13 +1,14 @@
 version: 0.2
 phases: 
   install:
-    runtime-version: nodejs: 12
+    runtime-versions: 
+      nodejs: 12
   pre_build:
     commands:
     - npm build
     - npm test
 artifacts:
   files:
-  - src/**/*
-  - package.json
+    - src/**/*
+    - package.json
   
